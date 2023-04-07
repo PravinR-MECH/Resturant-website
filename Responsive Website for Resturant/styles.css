@@ -1,0 +1,207 @@
+:root{
+    --yellow:#FFC54D;
+    --red:crimson;
+    --white:whitesmoke;
+    --green:#53BF9D;
+}
+body ,h2{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.landing{
+    background-image: url(pexels-jessica-lewis-creative-858090.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: #FFC54D;
+    min-width: 120px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1.2em;
+    
+}
+#logo{
+    flex: 3;
+    font-size: 1.3em;
+    min-width: 260px;
+}
+nav {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--green);
+}
+header h2 i,nav i{
+    padding-right: .7em;
+}
+
+.maintxt{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    /* padding: 2.5em; */
+    align-items: center;
+    justify-content: center;
+}
+.tgl1{
+    color: var(--red);
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.tgl2{
+    color: var(--yellow);
+    font-weight: bolder;
+    font-size: 2.5em;    
+}
+.callus{
+    font-size: 1.2em;
+}
+.maintxt div{
+    padding: .3em;
+}
+.maintxt button{
+    width: 22vw;
+    margin: 2em;
+    background-color:var(--green)  ;
+    border-radius: 1.2em;
+    border: 1px solid var(--green);
+    padding: 1em;
+    min-width: 20vw;
+    color: var(--white);
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(45deg,rgb(115, 113, 113),  rgb(31, 30, 30));
+    color: var(--white);
+}
+#locheading,#menuheading{
+    background: linear-gradient(45deg,rgb(115, 113, 113),  rgb(31, 30, 30));
+    color: var(--red);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    padding: .3em;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.6em;
+    padding-bottom: .8em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    padding-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    /* justify-self: right */
+}
+/* .menu td:nth-child(2){
+    justify-self: left;
+} */
+.maincourse{
+    grid-row: span 2;
+}
+.locations{
+    background:linear-gradient(45deg,rgb(115, 113, 113),  rgb(31, 30, 30));
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr)) ;
+}
+.locations h2{
+    color: var(--green);
+    margin-bottom: 1em;
+}
+.locations div{
+    padding: 2em;
+}
+address{
+    font-size: 1.2em;
+}
+.cr{
+    background-color: rgba(0, 0, 0, 0.716);
+    color: var(--white);
+    padding: 1em;
+}
+
+/* footer button{
+    width: 30px;
+
+}
+footer button img{
+    width: 19px;
+    height: 19px;
+    align-items: center;
+
+} */
+
+.social-menu ul{
+    display: flex;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.716) ;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.social-menu ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 50px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+    
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
+
